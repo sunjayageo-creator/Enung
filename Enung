@@ -1,0 +1,202 @@
+<!doctype html>
+
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Website Statis — Contoh Modern</title>
+  <meta name="description" content="Template website statis responsif, SEO-friendly, dengan HTML, CSS, dan sedikit JavaScript. Cocok untuk portofolio, landing page, atau proyek kecil.">
+  <link rel="canonical" href="https://example.com/" />  <!-- Open Graph -->  <meta property="og:title" content="Website Statis — Contoh Modern">
+  <meta property="og:description" content="Template website statis responsif, SEO-friendly, dengan HTML, CSS, dan sedikit JavaScript.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Contoh+Website">  <!-- Twitter Card -->  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Website Statis — Contoh Modern">
+  <meta name="twitter:description" content="Template website statis responsif, SEO-friendly, dengan HTML, CSS, dan sedikit JavaScript.">  <!-- Structured Data (JSON-LD) -->  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Website Statis — Contoh Modern",
+    "url": "https://example.com/",
+    "description": "Template website statis responsif, SEO-friendly, dengan HTML, CSS, dan sedikit JavaScript."
+  }
+  </script>  <!-- Google Font (optional) -->  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#7c3aed;--muted:#94a3b8;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.5;margin:0;background:linear-gradient(180deg,#081226 0%, #071226 100%);color:#e6eef8}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+
+    header{backdrop-filter: blur(6px);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:12px 18px;margin-bottom:28px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#4f46e5);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    nav a:hover{color:#fff}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center}
+    .hero-inner{background:var(--card);border-radius:14px;padding:28px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .eyebrow{color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:13px}
+    h1{font-size:28px;margin:10px 0 6px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#4f46e5);color:white}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    /* Features */
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:20px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:12px}
+    .card h3{margin:0 0 8px}
+    .muted{color:var(--muted)}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:18px}
+    .img{height:140px;border-radius:10px;background-size:cover;background-position:center}
+
+    footer{margin-top:32px;padding:18px;border-radius:12px;background:var(--glass);display:flex;justify-content:space-between;align-items:center}
+
+    /* Responsive */
+    @media(min-width:800px){
+      .hero{grid-template-columns:1fr 420px}
+      h1{font-size:40px}
+    }
+
+    /* small utilities */
+    .kbd{background:#071226;border:1px solid rgba(255,255,255,0.04);padding:6px 8px;border-radius:8px;font-weight:700}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    label{display:block;margin-bottom:6px;color:var(--muted);font-size:13px}
+    .form-grid{display:grid;gap:10px}
+  </style></head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">WS</div>
+        <div>
+          <div style="font-weight:700">Website Statis</div>
+          <div style="font-size:12px;color:var(--muted)">Template modern, siap dipakai</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#features">Fitur</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </header><main class="hero">
+  <section class="hero-inner">
+    <div class="eyebrow">Template Cepat</div>
+    <h1>Buat website statis yang rapi, cepat, dan SEO-friendly</h1>
+    <p class="lead">Satu file, HTML + CSS + JS ringan. Cocok untuk portofolio, landing page produk, atau proyek sekolah. Tanpa build tools, tanpa drama.</p>
+
+    <div class="cta-row">
+      <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hubungi Saya</button>
+      <a class="btn btn-ghost" href="#gallery">Lihat Contoh</a>
+    </div>
+
+    <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+      <div class="kbd">HTML</div>
+      <div class="kbd">CSS</div>
+      <div class="kbd">Vanilla JS</div>
+    </div>
+  </section>
+
+  <aside style="padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);height:100%">
+    <h3 style="margin-top:0">Ringkasan Teknis</h3>
+    <ul class="muted">
+      <li>Ukuran file kecil &uarr; waktu muat cepat</li>
+      <li>Meta tags & structured data untuk SEO</li>
+      <li>Responsive — bekerja di HP dan desktop</li>
+      <li>Form kontak statis (email backend diperlukan jika mau kirim)</li>
+    </ul>
+    <div style="margin-top:12px">
+      <strong>Tips deploy:</strong>
+      <div class="muted" style="font-size:13px">Taruh file ini di GitHub Pages, Netlify, atau Vercel. Beres.</div>
+    </div>
+  </aside>
+</main>
+
+<section id="features" class="features">
+  <div class="card">
+    <h3>Performa</h3>
+    <p class="muted">Tidak perlu framework. CSS sederhana dan gambar placeholder. Optimalkan gambar saat punya konten asli.</p>
+  </div>
+  <div class="card">
+    <h3>SEO</h3>
+    <p class="muted">Meta tags, Open Graph, Twitter Card, dan JSON-LD minimal untuk indexing cepat.</p>
+  </div>
+  <div class="card">
+    <h3>Aksesibilitas</h3>
+    <p class="muted">Kontras teks, struktur semantik, dan tombol keyboard-friendly.</p>
+  </div>
+  <div class="card">
+    <h3>Customisasi</h3>
+    <p class="muted">Ganti warna, font, atau bagian mana pun. Semudah edit teks.</p>
+  </div>
+</section>
+
+<section id="gallery" class="gallery" aria-label="Contoh gambar">
+  <div class="img" style="background-image:url('https://via.placeholder.com/800x600.png?text=Proyek+1');" role="img" aria-label="Proyek 1"></div>
+  <div class="img" style="background-image:url('https://via.placeholder.com/800x600.png?text=Proyek+2');" role="img" aria-label="Proyek 2"></div>
+  <div class="img" style="background-image:url('https://via.placeholder.com/800x600.png?text=Proyek+3');" role="img" aria-label="Proyek 3"></div>
+  <div class="img" style="background-image:url('https://via.placeholder.com/800x600.png?text=Proyek+4');" role="img" aria-label="Proyek 4"></div>
+</section>
+
+<section id="contact" style="margin-top:22px">
+  <div class="card">
+    <h3 style="margin-top:0">Kontak</h3>
+    <form id="contactForm" class="form-grid" onsubmit="return handleSubmit(event)">
+      <div>
+        <label for="name">Nama</label>
+        <input id="name" name="name" type="text" placeholder="Nama kamu" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="email@contoh.com" required>
+      </div>
+      <div>
+        <label for="message">Pesan</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary">Kirim (demo)</button>
+      </div>
+    </form>
+    <p id="formStatus" class="muted" style="margin-top:12px;font-size:14px">Form ini hanya demo. Hubungkan ke backend untuk mengirim email.</p>
+  </div>
+</section>
+
+<footer>
+  <div style="font-size:14px">&copy; <span id="year"></span> Website Statis. Semua hak cipta.</div>
+  <div class="muted">Dibuat cepat — diedit lebih cepat lagi.</div>
+</footer>
+
+  </div>  <script>
+    // Small JS: tanggal, form validation demo
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('formStatus');
+
+      if(!name || !email || !message){
+        status.textContent = 'Semua kolom harus diisi.';
+        return false;
+      }
+
+      // demo: show data as JSON instead of sending
+      status.textContent = 'Data siap dikirim (demo). Lihat console.';
+      console.log('Contact demo payload:', {name,email,message});
+
+      // reset form
+      e.target.reset();
+      return false;
+    }
+  </script></body>
+</html>
